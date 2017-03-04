@@ -14,6 +14,15 @@ public class Example {
      */
     // todo: write not() method
 
+    public boolean not(boolean myOwn){
+
+        if (myOwn)
+            return false;
+        else
+            return true;
+
+
+    }
     /**
      * Create a method as described:
      * - named "doublePlusOne"
@@ -25,6 +34,13 @@ public class Example {
      * returns 11.
      */
     // todo: write doublePlusOne() method
+    public int doublePlusOne(int input){
+      int output = 2*input + 1;
+
+      return output;
+
+    }
+
 
     /**
      * Create a method as described:
@@ -37,6 +53,11 @@ public class Example {
      */
     // todo: write averageTwoNumbers() method
 
+    public double averageTwoNumbers(double input1, double input2){
+        double output = (input1 + input2)/2;
+
+        return output;
+    }
     /**
      * Create a method as described:
      * - named "getGreeting"
@@ -49,7 +70,11 @@ public class Example {
      * "Hello, Tracy!".
      */
     // todo: write getGreeting() method
+    public String getGreeting(String input){
+        String output = "Hello, "+input + "!";
 
+        return output;
+    }
     /**
      * Create a method as described:
      * - named "sayHello"
@@ -62,4 +87,8 @@ public class Example {
      * "Tracy", this method should print out "Hello, Tracy!".
      */
     // todo: write sayHello() method
+
+    public void sayHello(String greeting){
+        System.out.println(getGreeting(greeting)+"!");
+    }
 }
