@@ -89,6 +89,6 @@ public class Example {
     // todo: write sayHello() method
 
     public void sayHello(String greeting){
-        System.out.println(getGreeting(greeting)+"!");
+        System.out.println(getGreeting(greeting));
     }
 }
